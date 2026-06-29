@@ -1,0 +1,12 @@
+com\eqvs\tests\ReportsTests.class
+com\eqvs\base\DriverFactory.class
+com\eqvs\utils\ConfigReader.class
+com\eqvs\pages\UserManagementPage.class
+com\eqvs\pages\LoginPage.class
+com\eqvs\pages\ReportsPage.class
+com\eqvs\base\BaseTest.class
+com\eqvs\listeners\TestListener.class
+com\eqvs\tests\LoginTests.class
+com\eqvs\tests\UserManagementTests.class
+com\eqvs\pages\DashboardPage.class
+com\eqvs\utils\WaitUtils.class

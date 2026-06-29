@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enterprise Operations Portal Demo</title>
+  <link rel="stylesheet" href="assets/demo.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="logo">EOP</div>
+      <nav>
+        <button data-route="dashboard">Dashboard</button>
+        <button data-route="admin-users">Users</button>
+        <button data-route="reports">Reports</button>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <section id="login-view" class="view login-view">
+        <div class="login-panel">
+          <p class="eyebrow">QA Demo AUT</p>
+          <h1>Enterprise Operations Portal</h1>
+          <p>Use the seeded accounts to validate login, dashboard, user management, and reports.</p>
+          <label for="email">Email</label>
+          <input id="email" autocomplete="username" value="valid.user@corp.com">
+          <label for="password">Password</label>
+          <input id="password" type="password" autocomplete="current-password" value="Secure@2026QA">
+          <button data-test="login-submit" class="primary">Sign in</button>
+          <p data-test="login-error" class="error" role="alert"></p>
+          <div class="seed-data">
+            <span>admin@corp.com</span>
+            <span>manager@corp.com</span>
+            <span>valid.user@corp.com</span>
+            <span>Secure@2026QA</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="dashboard-view" class="view hidden">
+        <header class="page-header">
+          <div>
+            <p class="eyebrow">Operations</p>
+            <h1 data-test="dashboard-title">Dashboard</h1>
+          </div>
+          <div class="user-strip">
+            <span data-test="current-user"></span>
+            <button data-test="logout">Logout</button>
+          </div>
+        </header>
+        <div class="cards">
+          <article>
+            <span>Open Requests</span>
+            <strong>128</strong>
+          </article>
+          <article>
+            <span>Reports Generated</span>
+            <strong>42</strong>
+          </article>
+          <article data-test="admin-widget">
+            <span>Admin Queue</span>
+            <strong>7</strong>
+          </article>
+        </div>
+      </section>
+
+      <section id="admin-users-view" class="view hidden">
+        <header class="page-header">
+          <div>
+            <p class="eyebrow">Administration</p>
+            <h1>User Management</h1>
+          </div>
+          <button data-test="create-user" class="primary">Create User</button>
+        </header>
+        <form id="user-form" class="form hidden">
+          <label for="user-email">Email</label>
+          <input id="user-email">
+          <label for="first-name">First Name</label>
+          <input id="first-name">
+          <label for="last-name">Last Name</label>
+          <input id="last-name">
+          <button type="button" data-test="save-user" class="primary">Save User</button>
+        </form>
+        <p data-test="toast-success" class="success" role="status"></p>
+        <table>
+          <thead>
+            <tr><th>Email</th><th>Name</th><th>Status</th></tr>
+          </thead>
+          <tbody id="users-table">
+            <tr><td>valid.user@corp.com</td><td>Valid User</td><td>Active</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="reports-view" class="view hidden">
+        <header class="page-header">
+          <div>
+            <p class="eyebrow">Analytics</p>
+            <h1>Reports</h1>
+          </div>
+        </header>
+        <form class="report-form">
+          <label for="start-date">Start Date</label>
+          <input id="start-date" type="date">
+          <label for="end-date">End Date</label>
+          <input id="end-date" type="date">
+          <button type="button" data-test="generate-report" class="primary">Generate</button>
+        </form>
+        <p data-test="date-error" class="error" role="alert"></p>
+        <table data-test="report-table" class="hidden">
+          <thead>
+            <tr><th>Department</th><th>Requests</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Operations</td><td>128</td><td>Healthy</td></tr>
+            <tr><td>Finance</td><td>36</td><td>Review</td></tr>
+            <tr><td>Support</td><td>84</td><td>Healthy</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enterprise QA Validation Suite</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="mark">EQ</span>
+      <div>
+        <strong>Enterprise QA Validation Suite</strong>
+        <span>SDET Portfolio Project</span>
+      </div>
+    </div>
+    <nav aria-label="Primary">
+      <a href="#metrics">Metrics</a>
+      <a href="#artifacts">Artifacts</a>
+      <a href="#automation">Automation</a>
+      <a href="#reports">Reports</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Manual QA to Automation, End to End</p>
+        <h1>Enterprise-grade QA project built to show real SDET judgment.</h1>
+        <p class="lead">A complete testing repository for a multi-module enterprise web application: requirements, strategy, RTM, test cases, defects, execution reports, and Selenium Java architecture.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="../README.md">View README</a>
+          <a class="button" href="demo/index.html">Launch Demo AUT</a>
+          <a class="button" href="../Enterprise-QA-Validation-Suite-Blueprint.md">Open Blueprint</a>
+        </div>
+      </div>
+      <div class="quality-panel" aria-label="Quality status summary">
+        <div class="release-status">
+          <span>Release Readiness</span>
+          <strong>Conditional Go</strong>
+        </div>
+        <div class="signal-grid">
+          <div><span>Coverage</span><strong>100%</strong></div>
+          <div><span>Pass Rate</span><strong>75%</strong></div>
+          <div><span>P1 Bugs</span><strong>6</strong></div>
+          <div><span>Auto Candidates</span><strong>42</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="metrics" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Execution Snapshot</p>
+        <h2>Quality metrics that tell a release story</h2>
+      </div>
+      <div class="metrics-grid">
+        <article><span>Requirements</span><strong>26</strong><small>100% mapped in RTM</small></article>
+        <article><span>Scenarios</span><strong>110</strong><small>Module-based coverage</small></article>
+        <article><span>Test Cases</span><strong>60</strong><small>Manual execution ready</small></article>
+        <article><span>Defects</span><strong>20</strong><small>Severity, priority, RCA</small></article>
+      </div>
+    </section>
+
+    <section id="artifacts" class="section two-column">
+      <div>
+        <p class="eyebrow">QA Artifacts</p>
+        <h2>Built like a real QA team would ship it</h2>
+        <p>The repository contains the artifacts a QA lead, manual tester, and SDET would create during a realistic enterprise release cycle.</p>
+      </div>
+      <div class="artifact-list">
+        <a href="../TestPlan/Test-Strategy.md">Test Strategy</a>
+        <a href="../TestPlan/IEEE-Test-Plan.md">IEEE Test Plan</a>
+        <a href="../RTM/Requirement-Traceability-Matrix.md">Requirement Traceability Matrix</a>
+        <a href="../TestCases/Manual-Test-Cases.md">Manual Test Cases</a>
+        <a href="../BugReports/Defect-Log.md">Defect Log</a>
+        <a href="../Reports/Test-Execution-Report.md">Execution Report</a>
+        <a href="../Reports/Automation-Test-Run.md">Automation Run</a>
+      </div>
+    </section>
+
+    <section id="automation" class="section automation">
+      <div class="section-heading">
+        <p class="eyebrow">SDET Layer</p>
+        <h2>Selenium Java architecture with recruiter-ready talking points</h2>
+      </div>
+      <div class="automation-layout">
+        <pre><code>Automation/
+  src/test/java/com/eqvs/
+    base/
+    pages/
+    tests/
+    utils/
+    listeners/
+  src/test/resources/
+  pom.xml
+  testng.xml</code></pre>
+        <ul>
+          <li>Page Object Model separates UI behavior from assertions.</li>
+          <li>TestNG groups smoke and regression execution.</li>
+          <li>WebDriverManager removes local driver setup friction.</li>
+          <li>Framework is intentionally scaffolded for future live AUT binding.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="reports" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Leadership Reporting</p>
+        <h2>Executive-friendly quality communication</h2>
+      </div>
+      <div class="report-bars" aria-label="Execution result bars">
+        <div><span>Passed</span><meter min="0" max="60" value="45"></meter><strong>45</strong></div>
+        <div><span>Failed</span><meter min="0" max="60" value="10"></meter><strong>10</strong></div>
+        <div><span>Blocked</span><meter min="0" max="60" value="3"></meter><strong>3</strong></div>
+        <div><span>Deferred</span><meter min="0" max="60" value="2"></meter><strong>2</strong></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Enterprise QA Validation Suite</span>
+    <span>Manual Testing | STLC | JIRA | Selenium | TestNG</span>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
+

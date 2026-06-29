@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Enterprise QA Validation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Smoke and Regression Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.eqvs.tests.ReportsTests">
+        <methods>
+          <include name="managerCanGenerateReport"/>
+          <include name="invalidDateRangeShowsValidationError"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.eqvs.tests.ReportsTests -->
+      <class name="com.eqvs.tests.LoginTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="validUserCanLogin"/>
+        </methods>
+      </class> <!-- com.eqvs.tests.LoginTests -->
+      <class name="com.eqvs.tests.UserManagementTests">
+        <methods>
+          <include name="adminCanCreateUser"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.eqvs.tests.UserManagementTests -->
+    </classes>
+  </test> <!-- Smoke and Regression Tests(failed) -->
+</suite> <!-- Failed suite [Enterprise QA Validation Suite] -->

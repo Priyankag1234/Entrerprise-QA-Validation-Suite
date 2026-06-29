@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-30T02:05:12 IST" name="Enterprise QA Validation Suite" finished-at="2026-06-30T02:05:16 IST" duration-ms="4467">
+    <groups>
+      <group name="regression">
+        <method signature="LoginTests.validUserCanLogin()[pri:0, instance:com.eqvs.tests.LoginTests@3e58a80e]" name="validUserCanLogin" class="com.eqvs.tests.LoginTests"/>
+        <method signature="ReportsTests.managerCanGenerateReport()[pri:0, instance:com.eqvs.tests.ReportsTests@10e31a9a]" name="managerCanGenerateReport" class="com.eqvs.tests.ReportsTests"/>
+        <method signature="UserManagementTests.adminCanCreateUser()[pri:0, instance:com.eqvs.tests.UserManagementTests@131774fe]" name="adminCanCreateUser" class="com.eqvs.tests.UserManagementTests"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LoginTests.validUserCanLogin()[pri:0, instance:com.eqvs.tests.LoginTests@3e58a80e]" name="validUserCanLogin" class="com.eqvs.tests.LoginTests"/>
+        <method signature="ReportsTests.managerCanGenerateReport()[pri:0, instance:com.eqvs.tests.ReportsTests@10e31a9a]" name="managerCanGenerateReport" class="com.eqvs.tests.ReportsTests"/>
+        <method signature="UserManagementTests.adminCanCreateUser()[pri:0, instance:com.eqvs.tests.UserManagementTests@131774fe]" name="adminCanCreateUser" class="com.eqvs.tests.UserManagementTests"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-06-30T02:05:12 IST" name="Smoke and Regression Tests" finished-at="2026-06-30T02:05:16 IST" duration-ms="4467">
+      <class name="com.eqvs.tests.LoginTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.eqvs.tests.LoginTests@3e58a80e]" started-at="2026-06-30T02:05:12 IST" name="setUp" finished-at="2026-06-30T02:05:13 IST" duration-ms="1260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validUserCanLogin()[pri:0, instance:com.eqvs.tests.LoginTests@3e58a80e]" started-at="2026-06-30T02:05:13 IST" name="validUserCanLogin" finished-at="2026-06-30T02:05:13 IST" duration-ms="358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUserCanLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.eqvs.tests.LoginTests@3e58a80e]" started-at="2026-06-30T02:05:13 IST" name="tearDown" finished-at="2026-06-30T02:05:13 IST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.eqvs.tests.LoginTests -->
+      <class name="com.eqvs.tests.UserManagementTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.eqvs.tests.UserManagementTests@131774fe]" started-at="2026-06-30T02:05:15 IST" name="setUp" finished-at="2026-06-30T02:05:15 IST" duration-ms="641" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="adminCanCreateUser()[pri:0, instance:com.eqvs.tests.UserManagementTests@131774fe]" started-at="2026-06-30T02:05:15 IST" name="adminCanCreateUser" finished-at="2026-06-30T02:05:16 IST" duration-ms="683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanCreateUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.eqvs.tests.UserManagementTests@131774fe]" started-at="2026-06-30T02:05:16 IST" name="tearDown" finished-at="2026-06-30T02:05:16 IST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.eqvs.tests.UserManagementTests -->
+      <class name="com.eqvs.tests.ReportsTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.eqvs.tests.ReportsTests@10e31a9a]" started-at="2026-06-30T02:05:13 IST" name="setUp" finished-at="2026-06-30T02:05:14 IST" duration-ms="610" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="managerCanGenerateReport()[pri:0, instance:com.eqvs.tests.ReportsTests@10e31a9a]" started-at="2026-06-30T02:05:14 IST" name="managerCanGenerateReport" finished-at="2026-06-30T02:05:15 IST" duration-ms="570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- managerCanGenerateReport -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.eqvs.tests.ReportsTests@10e31a9a]" started-at="2026-06-30T02:05:15 IST" name="tearDown" finished-at="2026-06-30T02:05:15 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.eqvs.tests.ReportsTests -->
+    </test> <!-- Smoke and Regression Tests -->
+  </suite> <!-- Enterprise QA Validation Suite -->
+</testng-results>
