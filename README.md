@@ -107,9 +107,9 @@ Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
 Build: SUCCESS
 ```
 
-## Recruiter Talking Points
+## This project demonstrates that you can:
 
-This project demonstrates that you can:
+
 
 - Convert business requirements into testable acceptance criteria.
 - Design risk-based manual testing coverage.
